@@ -52,10 +52,10 @@ async def nazad1(message: types.Message):
 
 async def nazad(call: types.CallbackQuery):
      if call.data == "↪️ Назад":
-          await call.message.answer(f"Нашы курсы",reply_markup=kursy_button)  
+          await call.message.answer(f"Наши курсы",reply_markup=kursy_button)  
 
 def register_handlers_lesson(dp:Dispatcher):
-    dp.register_message_handler(kurs, text="👨‍🎓 Нашы курсы")   
+    dp.register_message_handler(kurs, text="👨‍🎓 Наши курсы")   
     dp.register_message_handler(backend, text="🛠 Backend-разработчик")  
     dp.register_message_handler(frontend, text="🎨 Frontend-разработчик")
     dp.register_message_handler(android, text="🔧 Android-разработчик")

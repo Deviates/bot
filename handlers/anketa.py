@@ -82,7 +82,7 @@ def register_handlers_ankete(dp: Dispatcher):
     dp.register_message_handler(otmena_reg, state="*", text='отмена')
     dp.register_message_handler(otmena_reg, Text(equals='отмена', ignore_case=True), state="*")
 
-    dp.register_message_handler(anketa_start, text="✍️ Записатса на урок")
+    dp.register_message_handler(anketa_start, text="✍️ Записаться на урок")
     dp.register_message_handler(load_name, state=FSMAdmin.name)
     dp.register_message_handler(load_age, state=FSMAdmin.age)
     dp.register_message_handler(load_gender, state=FSMAdmin.gender)
