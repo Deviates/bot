@@ -5,13 +5,13 @@ kurs_frontend = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton(
     text='📢 Подробнее',
-    url='https://google.com'
+    url='http://deviates.site/'
         )
     ],
     [
         InlineKeyboardButton(
-    text='🙋🏻‍♂️ Связатся c админом',
-    url='https://t.me/Abdykadyrov_S'
+    text='🙋🏻‍♂️ Связаться c админом',
+    url='https://t.me/aibaa_baimuratov'
         )
     ],
     [
@@ -28,13 +28,13 @@ kurs_backend = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton(
     text='📢 Подробнее',
-    url='https://google.com'
+    url='http://deviates.site/'
         )
     ],
     [
         InlineKeyboardButton(
-    text='🙋🏻‍♂️ Связатся c админом',
-    url='https://t.me/Abdykadyrov_S'
+    text='🙋🏻‍♂️ Связаться c админом',
+    url='https://t.me/aibaa_baimuratov'
         )
     ],
     [
@@ -56,8 +56,8 @@ kurs_dizain = InlineKeyboardMarkup(inline_keyboard=[
     ],
     [
         InlineKeyboardButton(
-    text='🙋🏻‍♂️ Связатся c админом',
-    url='https://t.me/Abdykadyrov_S'
+    text='🙋🏻‍♂️ Связаться c админом',
+    url='https://t.me/aibaa_baimuratov'
         )
     ],
     [
@@ -72,13 +72,13 @@ kurs_android = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton(
     text='📢 Подробнее',
-    url='https://google.com'
+    url='http://deviates.site/'
         )
     ],
     [
         InlineKeyboardButton(
-    text='🙋🏻‍♂️ Связатся c админом',
-    url='https://t.me/Abdykadyrov_S'
+    text='🙋🏻‍♂️ Связаться c админом',
+    url='https://t.me/aibaa_baimuratov'
         )
     ],
     [

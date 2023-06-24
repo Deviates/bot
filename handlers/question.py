@@ -4,7 +4,7 @@ from button.inline_button import markup10
 from button.button import nazad5, start_markup
 
 async def kurs(message: types.Message):
-    await bot.send_message(message.from_user.id, f"Часто задоваемые вопросы", reply_markup=markup10 )
+    await bot.send_message(message.from_user.id, f"Часто задаваемые вопросы", reply_markup=markup10 )
 
 async def callbak(call: types.CallbackQuery):
         if call.data == "butt_1":
@@ -65,5 +65,5 @@ async def callbak(call: types.CallbackQuery):
 #             await message.answer(f"Главная меню",reply_markup=start_markup)     
 
 def register_handlers_question(dp:Dispatcher):
-    dp.register_message_handler(kurs, text="❓ Часто задоваемые вопросы")  
+    dp.register_message_handler(kurs, text="❓ Часто задаваемые вопросы")  
     dp.register_callback_query_handler(callbak)  

@@ -6,8 +6,6 @@ from config import bot
 from button.button import submit_markup, start_markup, otmena_markup, gender_markup, region_button
 from database.bot_db import sql_command_insert
 
-
-
 class FSMAdmin(StatesGroup):
     name = State()
     age = State()
@@ -18,7 +16,7 @@ class FSMAdmin(StatesGroup):
 
 async def anketa_start(message: types.Message):
     await FSMAdmin.name.set()
-    await message.answer("Как вас завут?", reply_markup=otmena_markup)
+    await message.answer("Как вас зовут?", reply_markup=otmena_markup)
 
 async def load_name(message: types.Message, state: FSMContext):
     async with state.proxy() as data:
@@ -64,6 +62,8 @@ async def load_photo(message: types.Message, state: FSMContext):
 async def submit(message: types.Message, state: FSMContext):
     if message.text == "Да":   
         await sql_command_insert(state) 
+        async with state.proxy() as data:
+            await bot.send_message(-991522391, f"К вам посетитель:\n{data['name']}, {data['age']}, {data['gender']}, {data['region']}, \n {data['username']}")
         await state.finish()
         await message.answer("Спасибо за регистрацию! Скоро с вами свясатся администрация", reply_markup=start_markup)
     elif message.text == "Нет":
